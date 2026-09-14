@@ -13,7 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/PycharmProjects/PythonProject/1ª aula/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/PycharmProjects/PythonProject/Aulas - Peterson/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="~\Documents\programacao_de_aplicativos_py\.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="~\Documents\programacao-de-aplicativos-py\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
