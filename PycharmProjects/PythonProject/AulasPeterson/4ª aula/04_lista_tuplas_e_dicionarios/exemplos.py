@@ -53,3 +53,53 @@ if "João" in nomes:
     print("João está na lista")
 else:
     print("João não está na lista")
+
+#9. Lista com Diferentes tipos de dados
+
+dados = ["João" , 18 , 1.75 , True]
+print(dados)
+
+#10. Lista de numeros
+
+notas = [7.5 , 8.0 , 6.5 , 9.0]
+soma = 0
+
+for nota in notas:
+    soma += nota
+
+media = soma / len(notas)
+print(f"Media: {media:.1f}")
+
+#11. Tuplas
+#Tuplas são semelhantes às listas
+#A principal diferença é que tuplas não podem
+#ser alteradas depois de criadas.
+
+coordenadas = (10 , 20)
+print(coordenadas)
+
+#Acessando elementos
+print(coordenadas[0])
+print(coordenadas[1])
+
+#12. Dicionario
+#Dicionáriosarmazenam informações no formato:
+#chave: valor
+
+aluno = {
+    "nome" : "Carlos",
+    "idade" :  17,
+    "nota" :  8.5
+}
+print(aluno)
+
+#13. Acessando valores do dicionario
+
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
+
+#14. Alterando valores
+
+aluno["nota"] = 9.0
+print(aluno)
