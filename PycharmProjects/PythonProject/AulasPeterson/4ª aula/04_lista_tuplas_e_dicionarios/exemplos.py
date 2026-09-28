@@ -37,3 +37,19 @@ print(nomes)
 #pop() remove um elemento pelo indice
 nomes.pop(0)
 print(nomes)
+
+# 6. Tamanho da lista
+
+#len() informa a quantidade de elementos
+print(len(nomes))
+
+#7. Percorrendo uma lista
+for nome in nomes:
+    print(nomes)
+
+#8. Verificando se um elemento existe
+
+if "João" in nomes:
+    print("João está na lista")
+else:
+    print("João não está na lista")
