@@ -11,7 +11,6 @@ while True:
             numeros[contato] = telefone
         case 2:
             procurar_contato = input("Digite o nome do contato: ")
-
             if procurar_contato in numeros:
                 print(f"Telefone: {numeros[procurar_contato]}")
             else:
@@ -19,11 +18,9 @@ while True:
 
         case 3:
             remover = input("Digite o contato que queira remover: ")
-
             if remover in numeros:
                 del numeros[remover]
 
         case 4:
             print("Encerrando...")
             break
-
