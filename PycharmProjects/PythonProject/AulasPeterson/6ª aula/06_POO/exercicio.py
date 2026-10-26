@@ -187,3 +187,4 @@ carrinho.adicionar(produto3)
 carrinho.adicionar(produto4)
 
 carrinho.mostrar()
+
