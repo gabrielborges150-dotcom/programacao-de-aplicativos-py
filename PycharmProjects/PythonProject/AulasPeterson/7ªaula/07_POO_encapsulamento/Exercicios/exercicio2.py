@@ -20,11 +20,10 @@ class Cofre:
                 if self.__tentativas == 3:
                     self.__bloqueado = True
                     print("\nCofre bloqueado!")
-        else:
-            print("Cofre bloqueado!")
     
     def fechar(self):
             self.__aberto = False
+            print("Cofre fechado!")
             return self.__aberto 
 
     def guardar(self, item):
@@ -42,3 +41,18 @@ class Cofre:
             print(self.__itens)
         else:
             print("Não há itens")
+
+
+cofre = Cofre("1234")
+cofre.guardar("Relógio")  # Abra o cofre primeiro!
+cofre.abrir("0000")  # Senha incorreta! Tentativa 1 de 3.
+cofre.abrir("1234")  # Cofre aberto.
+cofre.guardar("Relógio")  # Relógio guardado.
+cofre.ver_itens()  # Itens: ['Relógio']
+cofre.fechar()  # Cofre fechado.
+
+cofre.abrir("1")  # Senha incorreta! Tentativa 1 de 3.
+cofre.abrir("2")  # Senha incorreta! Tentativa 2 de 3.
+cofre.abrir("3")  # Senha incorreta! Tentativa 3 de 3.
+
+cofre.abrir("1234")  # Cofre bloqueado!
