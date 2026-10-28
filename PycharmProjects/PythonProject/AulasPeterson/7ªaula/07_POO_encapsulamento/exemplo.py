@@ -37,4 +37,25 @@ try:
 except AttributeError:
     print("O atributo __salario não pode ser acessado de fora.")
 
+#2. Herança
 
+class Gerente(Funcionario):
+    def __init__(self, nome, salario, equipe):
+        super().__init__(nome, salario)#super chama o construtor da classe chamada
+        self.equipe = equipe#Atributo novo
+
+    def mostrar_equipe(self):
+        print(self.nome, "gerencia", self.equipe, "pessoas.")
+
+class Estagiario(Funcionario):
+    def __init__(self, nome, salario, curso):
+        super().__init__(nome, salario)
+        self.curso = curso
+
+fulano = Gerente("Fulano", 8000, 5)
+caio = Estagiario("Caio", 1500, "Análise de Sistemas")
+
+fulano.apresentar()
+caio.apresentar()
+caio.dar_aumento(5)
+caio.apresentar()
